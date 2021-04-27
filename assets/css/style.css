@@ -64,8 +64,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: #ffb6c1;
-    color: #000000;
+    background: bisque;
+    color: #f00;
     border-radius: 15px;
     text-shadow: none;
 }
@@ -78,14 +78,21 @@ section {
 
   .hero {
     background-image: url("../images/background-img.jpg");
-    height: 400px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
   }
 
   .picture {
-      margin: 0 auto 20px auto;
+      width: 100%;
+      margin: auto;
       flex: 1;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   .picture img {
@@ -97,10 +104,12 @@ footer {
     padding: 40px 35px;
     background: #ffb6c1;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer h2 {
-    display: inline;
     font-size: 15px;
     margin: 0;
     color: #000000;
@@ -111,7 +120,6 @@ footer a {
 }
 
 footer div {
-    float: right;
     line-height: 1.5;
     text-align: right;
 }
