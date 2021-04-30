@@ -199,13 +199,6 @@ footer div {
         font-size: 20px;
     }
 
-    header nav ul li a:hover {
-        background: bisque;
-        color: #f00;
-        border-radius: 15px;
-        text-shadow: none;
-    }
-
     .picture {
         width: 100%;
     }
