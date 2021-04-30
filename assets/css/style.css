@@ -176,3 +176,60 @@ footer div {
     text-align: right;
 }
 /* Footer section style ends */
+/*Media query for laptops and smaller screens*/
+@media screen and (max-width: 980px){
+    header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    header nav ul li a:hover {
+        background: bisque;
+        color: #f00;
+        border-radius: 15px;
+        text-shadow: none;
+    }
+
+    .picture {
+        width: 100%;
+    }
+
+    .picture img {
+        width: 25%;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    /* Media query for tablets and smaller screens */
+    @media screen and (max-width: 768px) {
+     /* this will be applied on any screen bwtween 768px and 575px */   
+      section {
+         padding: 30px 15px; 
+      }  
+    }
+
+    /* Media query for mobile phone and smaller screens */
+    @media screen and (max-width: 575px) {
+        .section-title {
+            width: 95%;
+        }      
+    }
+}

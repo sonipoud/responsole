@@ -1,7 +1,7 @@
 # My Portfolio
 
 ## Description
-A website that provides information about myself, the projects I have worked on and the information on how to contact me. 
+A website that provides information about myself, the projects I have worked on, the information on how to contact me and my resume. 
 
 ---
 
