@@ -9,10 +9,15 @@
     font-style: italic;
 }
 
+.top {
+    font-size: 20px;
+    font-weight: bold;
+}
 .content {
     width: 80%;
     margin: 0 auto;
     color: #024e76;
+    text-align: center;
 }
 
 .font {
@@ -26,9 +31,5 @@
     font-size: 16px;
     line-height: 1.5;
     margin: 20px 0;
-    text-align: center;
-}
-
-h3 {
     text-align: center;
 }
