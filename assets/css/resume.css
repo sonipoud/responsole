@@ -10,14 +10,20 @@
 }
 
 .top {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .content {
     width: 80%;
     margin: 0 auto;
-    color: #024e76;
+    color: #8b0000;
     text-align: center;
+}
+
+.content h3 {
+    font-style: italics;
+    text-decoration: underline;
 }
 
 .font {
