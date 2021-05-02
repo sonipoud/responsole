@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 .font {
     font-size: 50px;
     font-weight: bolder;
@@ -16,7 +22,7 @@
 .content {
     width: 80%;
     margin: 0 auto;
-    color: #8b0000;
+    color: black;
     text-align: center;
 }
 
