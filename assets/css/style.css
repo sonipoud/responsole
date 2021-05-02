@@ -15,7 +15,7 @@ header {
     padding: 20px 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #ffb6c1;
-    color: cornsilk;
+    color: fff8dc;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -64,7 +64,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: bisque;
+    background:#ffe4c4;
     color: #f00;
     border-radius: 15px;
     text-shadow: none;
@@ -146,6 +146,12 @@ section {
     background-position: center;
     padding: 20px 0;
     min-height: 250px;
+    opacity: 0.8;
+  }
+
+  .flex-item:hover {
+    background: #ffb6c1;
+    opacity: 1;
   }
 
   .section-color {
