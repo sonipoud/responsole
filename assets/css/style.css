@@ -118,7 +118,6 @@ section {
 
 .section-title h2 {
     text-align: left;
-    border-right: 3px solid #000000;
 }
 
 .section-title {
@@ -128,6 +127,7 @@ section {
     padding-left: 20px;
     width: 20%;
     flex-wrap: wrap;
+    border-right: 3px solid #000000;
 }   
 
 .flex-item {
@@ -153,7 +153,7 @@ section {
     background-size: cover;
     background-position: relative;
     margin: 30px;
-    opacity: 0.8;
+    opacity: 0.7;
     width: 80%;
     justify-content: space-between;
 }
@@ -162,9 +162,22 @@ section {
     opacity: 1;
 }
 
-.flex-item a {
+.ref {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.ref a {
+    margin: 30px;
+    width: auto;
+    padding-left: 220px;
+} 
+
+.ref:hover {
+    background-color: #ffb6c1;
+    border-radius: 15px;
 }
 
 
@@ -220,7 +233,7 @@ footer div {
         width: 100%;
     }
 
-    .picture img {
+    .flex-item img {
         width: 30%;
     }
 
