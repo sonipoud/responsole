@@ -4,8 +4,8 @@
     --secondary-color:#ffb6c1;
     --tertiary-color:#000000;
     --quaternary-color:#ffe4c4;
-    --quinary-color:-#f00;
-    --senary-color:  #5a78db;
+    --quinary-color:#f00;
+    --senary-color: #5a78db;
 }
 
 * {
@@ -16,7 +16,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: --primary-color;
+    background-color: var(--primary-color);
     line-height: 1.5;
 }
 
@@ -24,8 +24,7 @@ body {
 header {
     padding: 20px 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: --secondary-color;
-    color: fff8dc;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -43,13 +42,13 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: --tertiary-color;
+    color: var(--tertiary-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
-    color: --tertiary-color;
+    color: var(--tertiary-color);
     text-decoration: none;
 }
 
@@ -74,8 +73,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background:--quaternary-color;
-    color:--quinary-color;
+    background:var(--quaternary-color);
+    color:var(--quinary-color);
     border-radius: 15px;
     text-shadow: none;
 }
@@ -132,11 +131,11 @@ section {
 .section-title {
     font-size: 35px;  
     text-align: right;
-    color:  --senary-color;
+    color:  var(--senary-color);
     padding-left: 20px;
     width: 20%;
     flex-wrap: wrap;
-    border-right: 3px solid --tertiary-color;
+    border-right: 3px solid var(--tertiary-color);
 }   
 
 .flex-item {
@@ -144,7 +143,7 @@ section {
 }
 
 .flex-item p {
-    color: --tertiary-color;
+    color: var(--tertiary-color);
     font-size: 20px;
     text-align: left;
     margin: 30px;
@@ -185,7 +184,7 @@ section {
 } 
 
 .ref:hover {
-    background-color: --secondary-color;
+    background-color: var(--secondary-color);
     border-radius: 15px;
 }
 
@@ -193,7 +192,7 @@ section {
 /* Footer section style starts */
 footer {
     padding: 40px 35px;
-    background: --secondary-color;
+    background: var(--secondary-color);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -203,11 +202,11 @@ footer {
 footer h2 {
     font-size: 15px;
     margin: 0;
-    color: --tertiary-color;
+    color: var(--tertiary-color);
 }
 
 footer a {
-    color: --tertiary-color;
+    color: var(--tertiary-color);
 }
 
 footer div {
