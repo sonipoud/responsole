@@ -1,4 +1,13 @@
 /* Styling starts here */
+:root {
+    --primary-color:#dff9fb;
+    --secondary-color:#ffb6c1;
+    --tertiary-color:#000000;
+    --quaternary-color:#ffe4c4;
+    --quinary-color:#f00;
+    --senary-color: #5a78db;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,15 +16,15 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #dff9fb;
+    background-color: var(--primary-color);
+    line-height: 1.5;
 }
 
 /* Header section style starts */
 header {
     padding: 20px 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #ffb6c1;
-    color: fff8dc;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -33,13 +42,13 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #000000;
+    color: var(--tertiary-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
-    color: #000000;
+    color: var(--tertiary-color);
     text-decoration: none;
 }
 
@@ -64,8 +73,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background:#ffe4c4;
-    color: #f00;
+    background:var(--quaternary-color);
+    color:var(--quinary-color);
     border-radius: 15px;
     text-shadow: none;
 }
@@ -99,68 +108,91 @@ section {
       width: 20%;
   }
 
-/* About me section starts */
-.flex-row{
+/* Sections starts */
+.me {
     display: flex;
-  }
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
 
- .flex-row p::first-line {
-     font-weight: bold;
-     font-style: italic;
- } 
-
-  .about p {
-    line-height: 1.7;
-    color: #000000;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  .section-title {
-    font-size: 48px;
-    text-align: left;
-    color: #5a78db;
-    padding-bottom: 20px;
-    width: 50%;
-  }
-
-/* Work section */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     flex-direction: row;
-    margin-top: auto;
   }
 
- .flex-item {
-    width: 45%;
-    border-radius: 14px;
-    background-color: #ffb6c1;
-    font-size: 22px;
+.section-title h2 {
+    text-align: left;
+}
+
+.section-title {
+    font-size: 35px;  
+    text-align: right;
+    color:  var(--senary-color);
+    padding-right: 80px;
+    width: 20%;
+    flex-wrap: wrap;
+    border-right: 3px solid var(--tertiary-color);
+}   
+
+.flex-item {
+    width: 80%;
+}
+
+.flex-item p {
+    color: var(--tertiary-color);
+    font-size: 20px;
+    text-align: left;
+    margin: 30px;
+}
+
+.flex-item p::first-line { 
     font-weight: bold;
-    margin-bottom: 15px;
+    font-size: 25px;
+    font-style: italic;
+} 
+
+.flex-item img {
+    display: flex;
+    flex-direction: row;
     background-size: cover;
-    background-position: center;
-    padding: 20px 0;
-    min-height: 250px;
-    opacity: 0.8;
-  }
+    background-position: relative;
+    margin: 30px;
+    opacity: 0.7;
+    width: 80%;
+    justify-content: space-between;
+}
 
-  .flex-item:hover {
-    background: #ffb6c1;
+.flex-item img:hover {
     opacity: 1;
-  }
+}
 
-  .section-color {
-      background-color: #ffb6c1;
-  }
+.ref {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.ref a {
+    margin: 30px;
+    width: auto;
+    padding-left: 130px; 
+} 
+
+.ref:hover {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+}
+
+
 /* Footer section style starts */
 footer {
     padding: 40px 35px;
-    background: #ffb6c1;
+    background: var(--secondary-color);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -170,11 +202,11 @@ footer {
 footer h2 {
     font-size: 15px;
     margin: 0;
-    color: #000000;
+    color: var(--tertiary-color);
 }
 
 footer a {
-    color: #000000;
+    color: var(--tertiary-color);
 }
 
 footer div {
@@ -213,9 +245,17 @@ footer div {
         width: 30%;
     }
 
-    .section-title {
-        width: 80%;
+     .section-title {
+        width: 30%;
+        border-right: 3px solid var(--tertiary-color);
+        padding-right: 80px;
     }
+
+    .ref a {
+        margin: 30px;
+        width: auto;
+    }
+ 
 
     /* Media query for tablets and smaller screens */
     @media screen and (max-width: 768px) {
@@ -223,12 +263,23 @@ footer div {
       section {
          padding: 30px 15px; 
       }  
+
+      .ref a {
+        margin: 5px;
+        width: auto;
+    }
+
     }
 
     /* Media query for mobile phone and smaller screens */
     @media screen and (max-width: 575px) {
         .section-title {
             width: 95%;
-        }      
+        }  
+        
+        .ref a {
+            margin: 0px;
+            width: auto;
+        }
     }
 }
