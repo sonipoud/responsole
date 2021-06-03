@@ -1,4 +1,10 @@
 /* Styling starts here */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 :root {
     --primary-color:#dff9fb;
     --secondary-color:#ffb6c1;
@@ -6,12 +12,6 @@
     --quaternary-color:#ffe4c4;
     --quinary-color:#f00;
     --senary-color: #5a78db;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
 body {
@@ -26,10 +26,10 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: var(--secondary-color);
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
+    align-items: center;
     top: 0;
     background-image: url("../images/background-img.jpg");
     background-size: cover;
@@ -89,23 +89,37 @@ section {
     background-image: url("../images/background-img.jpg");
     background-size: cover;
     background-position: center;
+    min-height: 30vh;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
     background-attachment: fixed;
     background-position: 80%;
+    padding: 2% 6%;
+  }
+
+  .hero div {
+      flex: 0 0 90%;
   }
 
   .picture {
       width: 100%;
-      margin: auto;
+      margin: 0;
       flex: 1;
+      line-height: 1.2;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      display: inline;
   }
 
   .picture img {
       width: 20%;
+  }
+
+  .page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 /* Sections starts */
@@ -113,9 +127,9 @@ section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: auto;
-    margin: 50px auto;
-    padding-bottom: 50px;
+    flex-direction: row;
+    margin: 25px 0;
+    align-items: stretch;
 }
 
 .flex-container {
