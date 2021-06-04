@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-.font {
+h1 {
     font-size: 50px;
     font-weight: bolder;
     text-align: center;
@@ -31,15 +31,13 @@
     text-decoration: underline;
 }
 
-.font {
-    font-size: 45px;
-    font-weight: bold;
-    text-align: center;
-}
-
 .content p {
     font-size: 16px;
     line-height: 1.5;
     margin: 20px 0;
     text-align: center;
+}
+
+.list ul li{
+    list-style: none;
 }
