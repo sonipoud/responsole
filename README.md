@@ -20,8 +20,6 @@ A website that provides information about myself, the projects I have worked on,
 ![Screenshot 2](./assets/images/Screenshot2.png)
 ![Screenshot 3](./assets/images/Screenshot3.png)
 ![Screenshot 4](./assets/images/Screenshot4.png)
-![Screenshot 5](./assets/images/Screenshot5.png)
-![Screenshot 6](./assets/images/Screenshot6.png)
 
 ---
 
