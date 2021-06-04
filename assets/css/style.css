@@ -179,7 +179,7 @@ main {
     font-size: 1.6 rem;
 }
 
-p {
+.para p {
     color: var(--tertiary-color);
     font-size: 20px;
     text-align: left;
@@ -187,7 +187,7 @@ p {
     margin: 0;
 }
 
-p::first-line { 
+.para p::first-line { 
     font-weight: bold;
     font-size: 25px;
     font-style: italic;
