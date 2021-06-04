@@ -85,7 +85,7 @@ section {
     padding: 60px;
   }
 
-  .hero {
+.hero {
     background-image: url("../images/background-img.jpg");
     background-size: cover;
     background-position: center;
@@ -99,30 +99,35 @@ section {
     padding: 2% 6%;
   }
 
-  .hero div {
-      flex: 0 0 90%;
+.hero div {
+    flex: 0 0 90%;
   }
 
-  .picture {
-      width: 100%;
-      margin: 0;
-      flex: 1;
-      line-height: 1.2;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      display: inline;
+.picture {
+    width: 100%;
+    margin: 0;
+    flex: 1;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: inline;
   }
 
-  .picture img {
-      width: 20%;
+.picture img {
+    width: 20%;
   }
 
-  .page-wrapper {
+.page-wrapper {
     max-width: 88%;
     margin-left: auto;
     margin-right: auto;
   }
 
 /* Sections starts */
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+
 .me {
     display: flex;
     justify-content: space-between;
@@ -130,46 +135,71 @@ section {
     flex-direction: row;
     margin: 25px 0;
     align-items: stretch;
+    padding: 10px 0;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-.section-title h2 {
-    text-align: left;
-}
-
-.section-title {
-    font-size: 35px;  
+.me > h2 {
+    flex: 0 0 20%;
     text-align: right;
-    color:  var(--senary-color);
-    padding-right: 80px;
-    width: 20%;
-    flex-wrap: wrap;
-    border-right: 3px solid var(--tertiary-color);
-}   
+    padding-right: 15px;
+    border-right: 4px solid var(--tertiary-color);
+    font-size: 4vw;
+    line-height: 1.1;
+}
+
+.me > div {
+    flex: 0 0 77%;
+}
 
 .flex-item {
-    width: 80%;
+    border: 5px solid var(--quaternary-color);
+    min-height: 150px;
+    max-height: 150px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    flex-basis: calc(50% - 1em);
+    background-blend-mode: soft-light;
+    background-size: 150%;
 }
 
-.flex-item p {
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.flex-item div {
+    background-color: var(--secondary-color);
+    padding: 8px 10px;
+}
+
+.flex-item h3 {
+    font-size: 1.6 rem;
+}
+
+.para p {
     color: var(--tertiary-color);
     font-size: 20px;
     text-align: left;
-    margin: 30px;
+    margin-bottom: 20px;
+    margin: 0;
 }
 
-.flex-item p::first-line { 
+.para p::first-line { 
     font-weight: bold;
     font-size: 25px;
     font-style: italic;
 } 
 
-.flex-item img {
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container img {
     display: flex;
     flex-direction: row;
     background-size: cover;
@@ -180,29 +210,57 @@ section {
     justify-content: space-between;
 }
 
-.flex-item img:hover {
+.flex-container img:hover {
     opacity: 1;
 }
 
-.ref {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
+.contact-me a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3 rem;
+    font-style: normal;
+    font-weight: bold;
+    background-image: linear-gradient(270deg, var(--quinary-color) 0%, var(--primary-color) 100%);
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+    align-items: center;
+    height: 100%;
 }
 
-.ref a {
-    margin: 30px;
-    width: auto;
-    padding-left: 130px; 
-} 
-
-.ref:hover {
-    background-color: var(--secondary-color);
-    border-radius: 15px;
+.contact-me a:hover {
+    background-size: 100% 80%;
+    color: var(--tertiary-color);
 }
 
+.brewery-dog {
+    background-image: url(../images/brewery-dog.png);
+}
+ 
+.weatherDashboard {
+    background-image: url(../images/weather-dashboard.png);
+}
 
+.workday-scheduler {
+    background-image: url(../images/workday-scheduler.png);
+}
+
+.codequiz {
+    background-image: url(../images/code-quiz.png);
+}
+
+.password-generator {
+    background-image: url(../images/password-generator.png);
+}
+
+.run-buddy {
+    background-image: url(../images/run-buddy.png);
+}
+
+.horiseon {
+    background-image: url(../images/horiseon.png);
+}
 /* Footer section style starts */
 footer {
     padding: 40px 35px;
@@ -259,29 +317,12 @@ footer div {
         width: 30%;
     }
 
-     .section-title {
-        width: 30%;
-        border-right: 3px solid var(--tertiary-color);
-        padding-right: 80px;
-    }
-
-    .ref a {
-        margin: 30px;
-        width: auto;
-    }
- 
-
     /* Media query for tablets and smaller screens */
     @media screen and (max-width: 768px) {
      /* this will be applied on any screen bwtween 768px and 575px */   
       section {
          padding: 30px 15px; 
-      }  
-
-      .ref a {
-        margin: 5px;
-        width: auto;
-    }
+      } 
 
     }
 
@@ -290,10 +331,5 @@ footer div {
         .section-title {
             width: 95%;
         }  
-        
-        .ref a {
-            margin: 0px;
-            width: auto;
-        }
     }
 }
