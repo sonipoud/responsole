@@ -234,6 +234,30 @@ main {
     color: var(--tertiary-color);
 }
 
+.beat {
+    background-image: url();
+}
+
+.blog {
+    background-image: url();
+}
+
+.back-end {
+    background-image: url();
+}
+
+.note {
+    background-image: url();
+}
+
+.teamprofile {
+    background-image: url();
+}
+
+.generator {
+    background-image: url();
+}
+
 .brewery-dog {
     background-image: url(../images/brewery-dog.png);
 }
