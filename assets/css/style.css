@@ -235,27 +235,27 @@ main {
 }
 
 .beat {
-    background-image: url();
+    background-image: url(../images/BeatIT.png);
 }
 
 .blog {
-    background-image: url();
+    background-image: url(../images/myblog.png);
 }
 
 .back-end {
-    background-image: url();
+    background-image: url(../images/e-commerce.png);
 }
 
 .note {
-    background-image: url();
+    background-image: url(../images/notetaker.png);
 }
 
 .teamprofile {
-    background-image: url();
+    background-image: url(../images/teamprofilegen.png);
 }
 
 .generator {
-    background-image: url();
+    background-image: url(../images/readme.png);
 }
 
 .brewery-dog {
