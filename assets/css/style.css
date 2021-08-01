@@ -234,6 +234,30 @@ main {
     color: var(--tertiary-color);
 }
 
+.beat {
+    background-image: url(../images/BeatIT.png);
+}
+
+.blog {
+    background-image: url(../images/myblog.png);
+}
+
+.back-end {
+    background-image: url(../images/e-commerce.png);
+}
+
+.note {
+    background-image: url(../images/notetaker.png);
+}
+
+.teamprofile {
+    background-image: url(../images/teamprofilegen.png);
+}
+
+.generator {
+    background-image: url(../images/readme.png);
+}
+
 .brewery-dog {
     background-image: url(../images/brewery-dog.png);
 }
